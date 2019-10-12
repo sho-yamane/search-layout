@@ -115,7 +115,7 @@ export default class SearchBar extends React.PureComponent {
 
     return (
       <View style={styles.container}>
-        <View style={[styles.searchContainer, { width: inputWidth }]}>
+        <View style={[styles.searchContainer, { width: inputWidth }, this.props.customIosSearchContainerStyles]}>
           <TextInput
             ref={view => {
               this._textInput = view;
@@ -129,7 +129,7 @@ export default class SearchBar extends React.PureComponent {
             placeholder="Search"
             placeholderTextColor={this.props.placeholderTextColor || '#ccc'}
             onSubmitEditing={this._handleSubmit}
-            style={[styles.searchInput, searchInputStyle]}
+            style={[styles.searchInput, searchInputStyle, this.props.customIosTextInputStyles]}
           />
 
           <SearchIcon />
@@ -146,15 +146,15 @@ export default class SearchBar extends React.PureComponent {
             { opacity: showCancelButton ? 1 : 0 },
           ]}>
           <TouchableOpacity
-            style={styles.button}
+            style={[styles.button, this.props.customIosCancelButtonStyles]}
             hitSlop={{ top: 15, bottom: 15, left: 15, right: 20 }}
             onLayout={this._handleLayoutCancelButton}
             onPress={this._handlePressCancelButton}>
             <Text
-              style={{
+              style={[{
                 fontSize: 17,
                 color: this.props.tintColor || '#007AFF',
-              }}>
+              }, this.props.customIosCancelTextStyles]}>
               {this.props.cancelButtonText || 'Cancel'}
             </Text>
           </TouchableOpacity>

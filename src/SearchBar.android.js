@@ -37,7 +37,7 @@ export default class SearchBar extends React.PureComponent {
           underlineColorAndroid={this.props.underlineColorAndroid || '#ccc'}
           onSubmitEditing={this._handleSubmit}
           onChangeText={this._handleChangeText}
-          style={[styles.searchInput, searchInputStyle]}
+          style={[styles.searchInput, searchInputStyle, this.props.customAndroidTextInputStyles]}
         />
         <View
           style={{ width: 50, alignItems: 'center', justifyContent: 'center' }}>
@@ -45,12 +45,13 @@ export default class SearchBar extends React.PureComponent {
             ? <Touchable
                 onPress={this._handleClear}
                 hitSlop={{top: 15, left: 10, right: 15, bottom: 15}}
-                style={{ padding: 5 }}
+                style={[{ padding: 5 }, this.props.customAndroidClearButton]}
                 background={Touchable.Ripple(this.props.tintColor, true)}>
                 <Ionicons
                   name="md-close"
                   size={25}
                   color={this.props.tintColor}
+                  style={this.props.customAndroidClearIcon}
                 />
               </Touchable>
             : null}

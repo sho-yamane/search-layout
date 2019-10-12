@@ -50,6 +50,13 @@ export default class SearchLayout extends React.Component {
             tintColor={
               this.props.searchInputTintColor || this.props.headerTintColor
             }
+            customIosSearchContainerStyles={this.props.customIosSearchContainerStyles}
+            customIosTextInputStyles={this.props.customIosTextInputStyles}
+            customIosCancelButtonStyles={this.props.customIosCancelButtonStyles}
+            customIosCancelTextStyles={this.props.customIosCancelTextStyles}
+            customAndroidTextInputStyles={this.props.customAndroidTextInputStyles}
+            customAndroidClearButton={this.props.customAndroidClearButton}
+            customAndroidClearIcon={this.props.customAndroidClearIcon}
           />
         </Header>
 
