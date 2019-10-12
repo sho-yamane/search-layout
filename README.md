@@ -34,7 +34,7 @@ import {
   StackViewTransitionConfigs,
 } from 'react-navigation';
 import { RectButton, BorderlessButton } from 'react-native-gesture-handler';
-import SearchLayout from 'react-navigation-addon-search-layout';
+import SearchLayout from 'react-navigation-addon-search-layout-custom';
 import { Ionicons } from '@expo/vector-icons';
 
 class HomeScreen extends React.Component {
