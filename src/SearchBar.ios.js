@@ -126,7 +126,7 @@ export default class SearchBar extends React.PureComponent {
             autoCapitalize="none"
             autoCorrect={false}
             returnKeyType="search"
-            placeholder="Search"
+            placeholder={this.props.placeholderText}
             placeholderTextColor={this.props.placeholderTextColor || '#ccc'}
             onSubmitEditing={this._handleSubmit}
             style={[styles.searchInput, searchInputStyle, this.props.customIosTextInputStyles]}

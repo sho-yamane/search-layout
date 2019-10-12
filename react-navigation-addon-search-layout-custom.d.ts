@@ -4,6 +4,8 @@ declare module 'react-navigation-addon-search-layout-custom' {
   interface SearchLayoutProps {
     onChangeQuery: (query: string) => void;
     onSubmit?: (query: string) => void;
+    placeholderText?: string;
+    cancelButtonText?: string;
     headerBackgroundColor?: string;
     headerTintColor?: string;
     headerBorderBottomColor?: string;
