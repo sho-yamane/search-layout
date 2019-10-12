@@ -12,14 +12,14 @@ declare module 'react-navigation-addon-search-layout-custom' {
     searchInputTintColor?: string;
     searchInputPlaceholderTextColor?: string;
     searchInputTextColor?: string;
-    searchInputSelectionColor :string;
-    customIosSearchContainerStyles: object;
-    customIosTextInputStyles: object;
-    customIosCancelButtonStyles: object;
-    customIosCancelTextStyles: object;
-    customAndroidTextInputStyles: object;
-    customAndroidClearButton: object;
-    customAndroidClearIcon: object;
+    searchInputSelectionColor? :string;
+    customIosSearchContainerStyles?: object;
+    customIosTextInputStyles?: object;
+    customIosCancelButtonStyles?: object;
+    customIosCancelTextStyles?: object;
+    customAndroidTextInputStyles?: object;
+    customAndroidClearButton?: object;
+    customAndroidClearIcon?: object;
     renderResults?: () => React.ReactElement | null;
   }
 
