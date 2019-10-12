@@ -6,6 +6,7 @@ declare module 'react-navigation-addon-search-layout-custom' {
     onSubmit?: (query: string) => void;
     headerBackgroundColor?: string;
     headerTintColor?: string;
+    headerBorderBottomColor?: string;
     placeholderTextColor?: string;
     textColor?: string;
     searchInputUnderlineColorAndroid?: string;
@@ -13,6 +14,7 @@ declare module 'react-navigation-addon-search-layout-custom' {
     searchInputPlaceholderTextColor?: string;
     searchInputTextColor?: string;
     searchInputSelectionColor? :string;
+    customContainerStyles?: object;
     customIosSearchContainerStyles?: object;
     customIosTextInputStyles?: object;
     customIosCancelButtonStyles?: object;

@@ -36,7 +36,7 @@ export default class Header extends React.PureComponent {
     if (Platform.OS === 'ios') {
       platformContainerStyles = {
         borderBottomWidth: StyleSheet.hairlineWidth,
-        borderBottomColor: '#A7A7AA',
+        borderBottomColor: props.headerBorderBottomColor || '#A7A7AA',
       };
     } else {
       platformContainerStyles = {
