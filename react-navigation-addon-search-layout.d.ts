@@ -1,4 +1,4 @@
-declare module 'react-navigation-addon-search-layout' {
+declare module 'react-navigation-addon-search-layout-custom' {
   import * as React from 'react';
 
   interface SearchLayoutProps {
