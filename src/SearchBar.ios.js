@@ -152,7 +152,7 @@ export default class SearchBar extends React.PureComponent {
             onPress={this._handlePressCancelButton}>
             <Text
               style={[{
-                fontSize: 17,
+                fontSize: 15,
                 color: this.props.tintColor || '#007AFF',
               }, this.props.customIosCancelTextStyles]}>
               {this.props.cancelButtonText || 'Cancel'}
